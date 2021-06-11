@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form method="post" action="" id="forma" name="">
+        <p>
+            <label>введите номер карты</label>
+            <div id="card_number">
+                <input type="text" id="card_1" onkeyup="checkParams()" minlength="4" maxlength="4"
+                       pattern="\d{4}" placeholder="4 цифры">
+                <input type="text" id="card_2" onkeyup="checkParams()" minlength="4" maxlength="4"
+                       pattern="\d{4}" placeholder="4 цифры">
+                <input type="text" id="card_3" onkeyup="checkParams()" minlength="4" maxlength="4"
+                       pattern="\d{4}" placeholder="4 цифры">
+                <input type="text" id="card_4" onkeyup="checkParams()" minlength="4" maxlength="4"
+                       pattern="\d{4}" placeholder="4 цифры">
+            </div>
+        </p>
+        <button type="button" id="submit" value="Отправить" disabled>Оплатить</button>
+    </form>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
